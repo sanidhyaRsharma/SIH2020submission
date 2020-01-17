@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private MapView mapView;
-
+    private MapboxMap mapboxMap;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -52,8 +52,7 @@ public class HomeFragment extends Fragment {
         HomeActivity activity = (HomeActivity) getActivity();
         activity.setMapView(mapView);
         mapView.onCreate(savedInstanceState);
-        mapView.getMapAsync(mapboxMap -> {
-        });
+        mapView.getMapAsync((HomeActivity)getActivity());
 
 
 

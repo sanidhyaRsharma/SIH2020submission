@@ -48,6 +48,8 @@ dependencies {
     //Mapbox
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.0'
 
+    implementation 'com.android.volley:volley:1.1.1'
+
 }
 
 
